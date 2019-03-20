@@ -1,0 +1,81 @@
+
+
+
+Nathan Reichert
+
+Saint Cloud State University
+
+CSCI 301
+
+Project 11
+
+Expression Trees
+
+Due:  3 December, 2015
+
+
+
+
+Nathan Reichert
+cs301106
+Section 1
+Project 11-Expression Tree
+Due 3 December, 2015
+
+Design Document
+
+Intro:
+      To begin, expression trees are a form of a binary tree in which the base case is a root with only one operand. Other cases involve an operator at every interior node of the tree, and each leaf of the tree is an operand.
+Data Structures:
+	This project uses a pointer based implementation of a binary tree.
+Functions:
+	The functions for the class include ExpTree() a default constructor, as well as a destructor, buildTree() which creates a binary expression tree, makeEmpty() which returns an expression tree to have no contents and only a root pointer, preorder() inorder() and postorder() make prefix infix and postfix versions of the expressions contained within an expression tree, and value() evaluates an expression tree and returns its value.
+Main Program:
+	The main program requests a filename of a data file containing fully parenthesized single digit arithmetic expressions, builds expression trees for each of the expressions, and outputs to the terminal the pre, in, and postfix versions as well as the evaluated value of each expression contained in the data file.
+
+
+
+
+
+
+
+
+
+Nathan Reichert
+cs301106
+Section 1
+Project 11-Expression Tree
+Due 3 December, 2015
+
+User Document
+
+	The main program gives instructions to the user to input a data file to be opened. Upon valid filename input, the program will output prefix, infix, and postfix versions of each individual expression contained in the data file, as well as the value that represents the evaluated expressions.
+
+All necessary and relevant files are located at:
+	/export/home/cs301/cs301106/Projects/project11
+
+To compile the main program in the CSCI2 unix terminal, enter:  
+      g++ expTree.cpp expTreeManip.cpp
+To run the program, after compiling, in the unix terminal, enter: a.out
+For the data file containing expressions, when the program prompts, enter:
+		expressionFile.dat
+
+
+
+
+
+
+
+
+
+
+Nathan Reichert
+cs301106
+Section 1
+Project 11-Expression Tree
+Due 3 December, 2015
+
+	In summation, this project represents an incredibly useful way of creating and evaluating prefix, infix, and postfix expressions as well as evaluating those expressions. This type of program could be modified to do more complex calculations depending on the input contained within a potential data file.
+
+One thing in particular that this project has taught me was how to manage the output of each type of expression recursively. That is, by rearranging the output lines of code for one type of expression, one is easily able to achieve the proper code for the output of either of the other two types of expressions (speaking in terms of this project, specifically).
+
